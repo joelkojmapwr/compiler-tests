@@ -1,0 +1,8 @@
+PROGRAM IS
+    x, a[5:10]
+IN
+    x:=54;
+    a[6]:=23;
+    WRITE x;
+    WRITE a[6];
+END

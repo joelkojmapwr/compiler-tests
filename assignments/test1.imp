@@ -1,0 +1,6 @@
+PROGRAM IS
+    x
+IN
+    x:=54;
+    WRITE x;
+END
