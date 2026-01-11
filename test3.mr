@@ -1,0 +1,22 @@
+READ
+SWP a
+STORE 81
+READ
+SWP d
+LOAD 81
+SWP b
+RST a
+ADD b
+RST b
+INC b
+SHL b
+SHL b
+INC b
+SHL b
+SHL b
+SUB b
+SWP d
+RSTORE d
+LOAD 15
+WRITE
+HALT

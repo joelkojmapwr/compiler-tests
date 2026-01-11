@@ -1,0 +1,6 @@
+PROGRAM IS
+
+IN
+    WRITE 567;
+    WRITE 744389;
+END

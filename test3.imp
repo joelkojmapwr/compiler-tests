@@ -1,0 +1,7 @@
+PROGRAM IS
+    table[20:100], n
+IN
+    READ n;
+    READ table[n];
+    WRITE table[35];
+END
