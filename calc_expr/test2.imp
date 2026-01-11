@@ -1,0 +1,11 @@
+PROGRAM IS
+    x, y, t[10:20]
+IN
+    x:=12;
+    y:=13;
+    t[12]:=1000;
+    t[13]:=1200;
+    WRITE t[x];
+    t[11]:=t[x]+t[y];
+    WRITE t[11];
+END
