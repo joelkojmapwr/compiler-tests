@@ -1,0 +1,6 @@
+PROGRAM IS
+    table[20:100]
+IN
+    READ table[35];
+    WRITE table[35];
+END

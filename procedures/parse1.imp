@@ -1,0 +1,15 @@
+PROCEDURE gcd(I a,I b,O c) IS
+  x,y
+IN
+  WRITE a;
+  READ c;
+  WRITE c;
+  WRITE c;
+  WRITE c;
+END
+
+PROGRAM IS
+  a,b,c,d,x,y,z
+IN
+    WRITE 66;
+END
