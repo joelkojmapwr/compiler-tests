@@ -13,5 +13,5 @@ IN
     WRITE a;
     READ a;
     gcd(a);
-  #  WRITE a;
+    WRITE a;
 END
