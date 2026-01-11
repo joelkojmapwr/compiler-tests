@@ -1,0 +1,17 @@
+PROCEDURE gcd(I a) IS
+  x,y
+IN
+  WRITE a;
+  READ a;
+END
+
+PROGRAM IS
+  a
+IN
+    READ a;
+    gcd(a);
+    WRITE a;
+    READ a;
+    gcd(a);
+  #  WRITE a;
+END

@@ -3,7 +3,7 @@ PROCEDURE gcd(I a,I b,O c) IS
 IN
   WRITE a;
   READ c;
-  WRITE c;
+  WRITE b;
   WRITE c;
   WRITE c;
 END
@@ -12,4 +12,8 @@ PROGRAM IS
   a,b,c,d,x,y,z
 IN
     WRITE 66;
+    READ a;
+    READ b;
+    gcd(a,b,c);
+    WRITE c;
 END
