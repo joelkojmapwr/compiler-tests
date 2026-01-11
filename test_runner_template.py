@@ -75,18 +75,21 @@ def test_programs():
     test_runner = CompilerTestRunner()
     vm_runner = VMRunner()
     vm_output_validator = VMOutputValidator()
-    for filename in os.listdir(programs_dir):
-        if filename.endswith(".imp"):
-            input_file = os.path.join(programs_dir, filename)
-            output_file = input_file.replace("imp", "mr")
-            stdin_file = input_file.replace("imp", "in")
-            expected_result_file = input_file.replace("imp", "res")
-            try:
-                test_runner.compile(input_file, output_file)
-            except Exception as e:
-                print(f"Error compiling {filename}: {e}")
-                continue
+    test_dirs = ["read_write"]
+    for test_dir in test_dirs:
+        
+        for filename in os.listdir(f"{programs_dir}/{test_dir}"):
+            if filename.endswith(".imp"):
+                input_file = os.path.join(programs_dir, test_dir, filename)
+                output_file = input_file.replace("imp", "mr")
+                stdin_file = input_file.replace("imp", "in")
+                expected_result_file = input_file.replace("imp", "res")
+                try:
+                    test_runner.compile(input_file, output_file)
+                except Exception as e:
+                    print(f"Error compiling {filename}: {e}")
+                    continue
 
-            result = vm_runner.run_on_vm(output_file, stdin_file)
-            vm_output_validator.validate(result.stdout, expected_result_file)
+                result = vm_runner.run_on_vm(output_file, stdin_file)
+                vm_output_validator.validate(result.stdout, expected_result_file)
             
