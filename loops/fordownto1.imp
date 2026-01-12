@@ -1,0 +1,7 @@
+PROGRAM IS
+a,b,c
+IN
+    FOR i FROM 10 DOWNTO 5 DO
+        WRITE i;
+    ENDFOR
+END

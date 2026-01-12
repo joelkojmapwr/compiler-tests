@@ -1,5 +1,4 @@
 READ
-SWP a
 STORE 81
 READ
 SWP d

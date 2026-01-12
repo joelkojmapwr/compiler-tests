@@ -1,0 +1,33 @@
+RST a
+INC a
+SHL a
+INC a
+SHL a
+STORE 3
+RST a
+INC a
+SHL a
+INC a
+SHL a
+SWP e
+RST a
+INC a
+SHL a
+SHL a
+INC a
+SHL a
+INC a
+SUB e
+STORE 4
+JZERO 32
+RST a
+INC a
+WRITE
+LOAD 3
+INC a
+STORE 3
+LOAD 4
+DEC a
+STORE 4
+JUMP 21
+HALT
