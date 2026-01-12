@@ -1,0 +1,29 @@
+PROCEDURE d(b) IS
+
+IN
+    b:=9;
+    WHILE b <=64 DO
+        WRITE b;
+        b:=b+b;
+    ENDWHILE
+END
+
+
+
+PROGRAM IS
+a,b,c
+IN
+    a:=10;
+    WHILE a>4 DO
+        WRITE a;
+        a:=a-2;
+    ENDWHILE
+
+    d(b);
+
+    WHILE a != 2 DO
+        WRITE a;
+        a:=a-1;
+    ENDWHILE
+
+END

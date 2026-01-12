@@ -1,0 +1,9 @@
+PROGRAM IS
+a,b,c
+IN
+    a:=10;
+    REPEAT
+        WRITE a;
+        a:=a-3;
+    UNTIL a=0;
+END
