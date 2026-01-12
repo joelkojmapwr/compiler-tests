@@ -1,0 +1,14 @@
+
+PROCEDURE ab(T a) IS
+IN
+  WRITE a[11];
+END
+
+PROGRAM IS
+  a, b, t[10:20]
+IN
+    a:=15;
+    t[11]:=34;
+    WRITE a;
+    ab(t);
+END

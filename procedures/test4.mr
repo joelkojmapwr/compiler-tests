@@ -1,0 +1,44 @@
+JUMP 15
+STORE 0
+LOAD 1
+RST b
+INC b
+SHL b
+SHL b
+INC b
+SHL b
+INC b
+ADD b
+RLOAD a
+WRITE
+LOAD 0
+RTRN
+RST a
+INC a
+SHL a
+INC a
+SHL a
+INC a
+SHL a
+INC a
+STORE 2
+RST a
+INC a
+SHL a
+SHL a
+SHL a
+SHL a
+INC a
+SHL a
+STORE 5
+LOAD 2
+WRITE
+RST a
+SHL a
+INC a
+SHL a
+INC a
+SHL a
+STORE 1
+CALL 1
+HALT
