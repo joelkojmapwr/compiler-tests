@@ -1,0 +1,18 @@
+PROGRAM IS
+a,b,c
+IN
+    a:=5;
+    IF a > 3 THEN
+        WRITE a;
+        a:=20;
+    ENDIF
+
+    IF a < 15 THEN
+        WRITE a; # Should not be executed
+    ENDIF
+
+    IF a = 20 THEN
+        a:=25;
+        WRITE a;
+    ENDIF
+END
