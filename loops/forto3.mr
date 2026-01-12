@@ -29,7 +29,7 @@ LOAD 6
 SWP d
 LOAD 0
 ADD d
-SWP d
+SWP c
 LOAD 6
 SWP b
 RST a
@@ -41,8 +41,8 @@ SHL b
 INC b
 SHL b
 SUB b
-SWP d
-RSTORE d
+SWP c
+RSTORE c
 LOAD 6
 INC a
 STORE 6

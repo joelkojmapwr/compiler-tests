@@ -1,7 +1,7 @@
 READ
 STORE 81
 READ
-SWP d
+SWP c
 LOAD 81
 SWP b
 RST a
@@ -14,8 +14,8 @@ INC b
 SHL b
 SHL b
 SUB b
-SWP d
-RSTORE d
+SWP c
+RSTORE c
 LOAD 15
 WRITE
 HALT

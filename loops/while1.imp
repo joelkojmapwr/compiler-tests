@@ -1,0 +1,15 @@
+PROGRAM IS
+a,b,c
+IN
+    a:=10;
+    WHILE a>4 DO
+        WRITE a;
+        a:=a-2;
+    ENDWHILE
+
+    WHILE a != 2 DO
+        WRITE a;
+        a:=a-1;
+    ENDWHILE
+
+END
