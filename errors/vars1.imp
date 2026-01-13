@@ -1,0 +1,16 @@
+PROCEDURE a(I b) IS
+IN
+    WRITE b;
+    x:=36;
+    WRITE b;
+END
+
+PROGRAM IS
+    x, a[5:10]
+IN
+    x:=54;
+    a[6]:=23;
+    WRITE x;
+    WRITE a[6];
+    a(x);
+END
