@@ -1,14 +1,18 @@
 
-PROCEDURE ab(T a) IS
+PROCEDURE ab(T a, O b) IS
 IN
+  a[11]:=34;
   WRITE a[11];
+  a[15]:=20;
+  WRITE a[15];
+  b:=18;
+  a[b]:=100;
+  WRITE a[b];
 END
 
 PROGRAM IS
   a, b, t[10:20]
 IN
-    a:=15;
-    t[11]:=34;
-    WRITE a;
-    ab(t);
+    #t[11]:=34;
+    ab(t, a);
 END
