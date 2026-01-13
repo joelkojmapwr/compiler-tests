@@ -1,0 +1,7 @@
+PROGRAM IS
+    x,y
+IN
+    x:=60;
+    y:=x/6;
+    WRITE y;
+END

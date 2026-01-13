@@ -1,0 +1,10 @@
+PROGRAM IS
+    x
+IN
+    x:=5*12;
+    WRITE x;
+    x:=x*x;
+    WRITE x;
+    x:=0*x;
+    WRITE x;
+END
