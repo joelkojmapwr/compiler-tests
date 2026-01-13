@@ -1,0 +1,14 @@
+PROGRAM IS
+    x,y
+IN
+    x:=60;
+    y:=x/0;
+    WRITE y;
+    y:=x/60;
+    WRITE y;
+    x:=999;
+    y:=x/3;
+    WRITE y;
+    y:=x/1000;
+    WRITE y;
+END

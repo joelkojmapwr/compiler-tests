@@ -1,0 +1,13 @@
+PROGRAM IS
+    x,y
+IN
+    x:=60;
+    y:=x%6;
+    WRITE y;
+    y:=60%33;
+    WRITE y;
+    y:=3600%0;
+    WRITE y;
+    y:=x%90;
+    WRITE y;
+END
