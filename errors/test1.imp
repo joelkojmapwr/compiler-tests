@@ -1,0 +1,34 @@
+# Passing array as non table parameter
+
+PROCEDURE ac(I a) IS
+IN 
+    WRITE a;
+END
+
+PROCEDURE aa(I a, I b) IS
+IN 
+    WRITE a;
+    WRITE b;
+    ac(b);
+END
+
+
+PROCEDURE ab(I a, I b, I c, I d) IS
+IN
+  WRITE a;
+  WRITE b;
+  WRITE c;
+  WRITE d;
+  aa(a, c);
+END
+
+PROGRAM IS
+  a, b, c, d, t[0:10]
+IN
+    READ a;
+    READ b;
+    READ c;
+    READ d;
+    WRITE c;
+    ab(d,c,b,t);
+END

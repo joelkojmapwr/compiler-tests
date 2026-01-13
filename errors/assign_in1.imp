@@ -1,4 +1,4 @@
-PROCEDURE a(b) IS
+PROCEDURE a(I b) IS
 IN
     WRITE b;
     b:=36;
