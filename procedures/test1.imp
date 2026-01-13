@@ -1,0 +1,29 @@
+# Calling procedure aa with param I when arg is O
+
+PROCEDURE ac(I a) IS
+IN 
+    WRITE a;
+END
+
+PROCEDURE aa(I a, I b) IS
+IN 
+    WRITE a;
+    ac(b);
+END
+
+
+PROCEDURE ab(I a, I b, I c, I d) IS
+IN
+  aa(a, c);
+END
+
+PROGRAM IS
+  a, b, c, d, e, f
+IN
+    d:=5;
+    c:=6;
+    b:=7;
+    a:=8;
+    
+    ab(d,c,b,a);
+END
