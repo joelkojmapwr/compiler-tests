@@ -1,0 +1,30 @@
+# sortowanie
+
+PROCEDURE shuffle(T t, n, a) IS
+  q, w, x
+IN
+  x:=n/2;
+  x:=x-1;
+  t[x]:=444;
+  t[a]:=333;
+  a:=a+1;
+  t[a]:=777;
+  t[n]:=678;
+END
+
+
+PROCEDURE write(T t, n) IS
+IN
+  FOR i FROM 1 TO n DO
+    WRITE t[i];
+  ENDFOR
+END
+
+PROGRAM IS
+  t[1:23], n, ind
+IN
+  n:=8;
+  ind:=4;
+  shuffle(t,n, ind);
+  write(t,n);
+END

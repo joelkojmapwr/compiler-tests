@@ -1,0 +1,38 @@
+# sortowanie
+
+PROGRAM IS
+  t[1:23], n, q, w, x, j, k
+IN
+  n:=23;
+    q:=5;
+  w:=1;
+  FOR i FROM 1 TO n DO
+    w:=w*q;
+    w:=w%n;
+    t[i]:=w;
+  ENDFOR
+  t[n]:=0;
+  
+  FOR i FROM 1 TO n DO
+    WRITE t[i];
+  ENDFOR
+  WRITE 1234567890;
+    FOR i FROM 2 TO n DO
+    x:=t[i];
+    j:=i;
+    WHILE j>1 DO
+      k:=j-1;
+      IF t[k]>x THEN
+        t[j]:=t[k];
+        j:=j-1;
+      ELSE
+        k:=j;
+        j:=1;
+      ENDIF
+    ENDWHILE
+    t[k]:=x;
+  ENDFOR
+  FOR i FROM 1 TO n DO
+    WRITE t[i];
+  ENDFOR
+END
