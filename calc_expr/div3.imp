@@ -1,0 +1,12 @@
+PROGRAM IS
+    x,y
+IN
+    x:=4;
+    y:=16/x;
+    WRITE y;
+    y:=16%x;
+    WRITE y;
+    y:=334;
+    y:=0/x;
+    WRITE y;
+END

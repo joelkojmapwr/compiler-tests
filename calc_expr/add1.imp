@@ -1,0 +1,13 @@
+PROGRAM IS
+    x,y
+IN
+    x:=16;
+    y:=1+x;
+    WRITE y;
+    y:=0+x;
+    WRITE y;
+    y:=0-x;
+    WRITE y;
+    y:=6+x;
+    WRITE y;
+END
