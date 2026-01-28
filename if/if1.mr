@@ -11,7 +11,7 @@ INC a
 SWP d
 LOAD 0
 SUB d
-JZERO 24
+JZERO 23
 LOAD 0
 WRITE
 RST a
@@ -22,7 +22,6 @@ INC a
 SHL a
 SHL a
 STORE 0
-LOAD 0
 SWP d
 RST a
 INC a
@@ -33,7 +32,7 @@ INC a
 SHL a
 INC a
 SUB d
-JZERO 38
+JZERO 37
 LOAD 0
 WRITE
 LOAD 0
@@ -46,7 +45,7 @@ INC a
 SHL a
 SHL a
 SUB d
-JPOS 71
+JPOS 69
 RST a
 INC a
 SHL a
@@ -57,7 +56,7 @@ SHL a
 SWP d
 LOAD 0
 SUB d
-JPOS 71
+JPOS 69
 RST a
 INC a
 SHL a
@@ -67,6 +66,5 @@ SHL a
 SHL a
 INC a
 STORE 0
-LOAD 0
 WRITE
 HALT
