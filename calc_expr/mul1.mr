@@ -3,33 +3,11 @@ INC a
 SHL a
 INC a
 SHL a
+INC a
 SHL a
-SWP d
-RST a
 INC a
 SHL a
 SHL a
-INC a
-SWP b
-SWP d
-SWP d
-RST a
-ADD d
-RST c
-JZERO 31
-SHR d
-SHL d
-SUB d
-JZERO 26
-SWP c
-ADD b
-SWP c
-SHL b
-SHR d
-RST a
-ADD d
-JUMP 18
-SWP c
 STORE 0
 WRITE
 LOAD 0
@@ -41,11 +19,11 @@ SWP d
 RST a
 ADD d
 RST c
-JZERO 56
+JZERO 34
 SHR d
 SHL d
 SUB d
-JZERO 51
+JZERO 29
 SWP c
 ADD b
 SWP c
@@ -53,7 +31,7 @@ SHL b
 SHR d
 RST a
 ADD d
-JUMP 43
+JUMP 21
 SWP c
 STORE 0
 WRITE
@@ -66,11 +44,11 @@ SWP d
 RST a
 ADD d
 RST c
-JZERO 81
+JZERO 59
 SHR d
 SHL d
 SUB d
-JZERO 76
+JZERO 54
 SWP c
 ADD b
 SWP c
@@ -78,7 +56,7 @@ SHL b
 SHR d
 RST a
 ADD d
-JUMP 68
+JUMP 46
 SWP c
 STORE 0
 WRITE

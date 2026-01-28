@@ -1,16 +1,10 @@
 RST a
 INC a
 SHL a
-INC a
 SHL a
-SHL a
-SWP d
-RST a
-INC a
 SHL a
 SHL a
 INC a
-ADD d
 STORE 0
 WRITE
 RST a
