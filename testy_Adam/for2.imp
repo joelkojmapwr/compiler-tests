@@ -1,0 +1,13 @@
+PROGRAM IS
+    s[0:10], t[5:15], a, b
+IN
+    s[3] := 12;
+    t[10] := 8;
+
+    a := 3;
+    b := 10;
+
+    FOR i FROM s[a] DOWNTO t[b] DO 
+        WRITE i;
+    ENDFOR
+END

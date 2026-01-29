@@ -1,0 +1,72 @@
+PROCEDURE proc(I x) IS
+  y
+IN
+  y := x * 2;
+  WRITE y;
+END
+
+PROGRAM IS 
+  a, b, c
+IN
+  FOR i FROM 2 TO 3 DO
+    FOR j FROM 9 TO 10 DO
+      FOR k FROM 5 TO 6 DO
+        FOR l FROM 19 TO 20 DO
+          proc(l);
+          WRITE i;
+          WRITE j;
+        ENDFOR
+      ENDFOR
+    ENDFOR
+  ENDFOR
+END
+
+# Poprawny wynik
+# 38
+# 2
+# 9
+# 40
+# 2
+# 9
+# 38
+# 2
+# 9
+# 40
+# 2
+# 9
+# 38
+# 2
+# 10
+# 40
+# 2
+# 10
+# 38
+# 2
+# 10
+# 40
+# 2
+# 10
+# 38
+# 3
+# 9
+# 40
+# 3
+# 9
+# 38
+# 3
+# 9
+# 40
+# 3
+# 9
+# 38
+# 3
+# 10
+# 40
+# 3
+# 10
+# 38
+# 3
+# 10
+# 40
+# 3
+# 10
