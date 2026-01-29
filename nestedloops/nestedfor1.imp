@@ -1,0 +1,12 @@
+PROGRAM IS
+a,b,c,d[2:10]
+IN
+    FOR i FROM 2 TO 6 DO
+        d[i]:=i*2;
+        FOR j FROM i TO 6 DO
+            d[i]:=d[i]+j;
+            WRITE d[i];
+            d[i]:=d[i]-j;
+        ENDFOR
+    ENDFOR
+END

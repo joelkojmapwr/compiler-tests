@@ -1,0 +1,12 @@
+PROGRAM IS
+a,b,c,d[2:10]
+IN
+    FOR i FROM 2 TO 4 DO
+        d[i]:=i*2;
+        FOR j FROM i TO 4 DO
+            FOR k FROM j TO 4 DO
+                WRITE k;
+            ENDFOR
+        ENDFOR
+    ENDFOR
+END

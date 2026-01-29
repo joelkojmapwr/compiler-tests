@@ -2,9 +2,9 @@ READ
 STORE 81
 READ
 SWP c
-LOAD 81
-SWP b
 RST a
+SWP b
+LOAD 81
 ADD b
 RST b
 INC b
